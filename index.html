@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adham Hassan - موقع المذاكرة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="database.sql">
+    <link rel="stylesheet" href="save_result.php">
+</head>
+<body>
+
+    <main class="container">
+        <h1>📚 Adham Hassan</h1>
+        <p>اختار صفك وابدأ المذاكرة والامتحانات</p>
+
+        <h2>اختار الصف الدراسي</h2>
+        <select id="grade">
+            <option value="">اختار الصف</option>
+            <option value="prep1">أولى إعدادي</option>
+            <option value="prep2">تانية إعدادي</option>
+            <option value="prep3">تالتة إعدادي</option>
+            <option value="sec1">أولى ثانوي</option>
+            <option value="sec2">تانية ثانوي</option>
+            <option value="sec3">تالتة ثانوي</option>
+        </select>
+
+        <button onclick="loadGrade()">عرض المواد</button>
+
+        <section id="booksSection" hidden>
+            <h2>📚 كتب الوزارة</h2>
+            <div id="booksArea"></div>
+        </section>
+
+        <section id="subjectsSection" hidden>
+            <h2>📝 اختار المادة للامتحان</h2>
+            <div id="subjects"></div>
+        </section>
+
+        <section id="quizArea"></section>
+        <section id="resultArea"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

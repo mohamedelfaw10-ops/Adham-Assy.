@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial;
+  background: #f1f5f9;
+  color: #172033;
+}
+
+header {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #0001;
+}
+
+.hidden {
+  display: none;
+}
+
+input, select {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.logout {
+  background: #64748b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.card, .question {
+  background: #f8fafc;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card button {
+  width: 100%;
+}
+
+.question {
+  margin: 12px 0;
+}
+
+.question label {
+  display: block;
+  margin: 10px 0;
+}
+
+.question input {
+  width: auto;
+}
+
+#resultArea {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+}

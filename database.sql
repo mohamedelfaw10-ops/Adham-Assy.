@@ -1,0 +1,25 @@
+CREATE DATABASE adham_hassan
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE adham_hassan;
+
+CREATE TABLE students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  google_uid VARCHAR(128) NOT NULL UNIQUE,
+  name VARCHAR(150) NOT NULL,
+  email VARCHAR(190) NOT NULL,
+  grade VARCHAR(20),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE exam_results (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  google_uid VARCHAR(128) NOT NULL,
+  grade VARCHAR(20) NOT NULL,
+  subject VARCHAR(100) NOT NULL,
+  score INT NOT NULL,
+  total INT NOT NULL,
+  percentage DECIMAL(5,2) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
